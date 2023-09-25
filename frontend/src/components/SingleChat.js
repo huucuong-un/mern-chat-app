@@ -183,10 +183,12 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             pb={3}
             px={2}
             w="100%"
-            fontFamily="Work sans"
             display="flex"
             justifyContent={{ base: "space-between" }}
             alignItems="center"
+            backgroundColor="#333"
+            color="white"
+            fontFamily="Space Mono"
           >
             <IconButton
               display={{ base: "flex", md: "none" }}
@@ -219,6 +221,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             h="100%"
             borderRadius="lg"
             overflowY="hidden"
+            background="#555"
           >
             {loading ? (
               <Spinner
@@ -234,7 +237,12 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
               </div>
             )}
 
-            <FormControl onKeyDown={sendMessage} isRequired mt={3}>
+            <FormControl
+              onKeyDown={sendMessage}
+              isRequired
+              mt={3}
+              backgroundColor="#444"
+            >
               {isTyping ? (
                 <div>
                   <Lottie
@@ -262,8 +270,9 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
           alignItems="center"
           justifyContent="center"
           h="100%"
+          backgroundColor="#444"
         >
-          <Text fontSize="3xl" pb={3} fontFamily="Work sans">
+          <Text fontSize="3xl" pb={3} fontFamily="Space Mono" color="white">
             Click on a user to start chatting
           </Text>
         </Box>

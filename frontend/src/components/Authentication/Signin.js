@@ -71,13 +71,13 @@ const Signin = () => {
   };
 
   return (
-    <VStack spacing="10px">
+    <VStack spacing="10px" fontFamily="Space Mono">
       <FormControl id="email" isRequired>
         <FormLabel>Email Address</FormLabel>
         <Input
           value={email}
           type="email"
-          placeholder="Enter Your Email Address"
+          placeholder="Enter your email"
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormControl>
@@ -98,24 +98,13 @@ const Signin = () => {
         </InputGroup>
       </FormControl>
       <Button
-        colorScheme="blue"
+        colorScheme="gray"
         width="100%"
         style={{ marginTop: 15 }}
         onClick={submitHandler}
         isLoading={loading}
       >
         Login
-      </Button>
-      <Button
-        variant="solid"
-        colorScheme="red"
-        width="100%"
-        onClick={() => {
-          setEmail("guest@example.com");
-          setPassword("123456");
-        }}
-      >
-        Get Guest User Credentials
       </Button>
     </VStack>
   );

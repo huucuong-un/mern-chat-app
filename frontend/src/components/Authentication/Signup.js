@@ -127,7 +127,7 @@ const Signup = () => {
   };
 
   return (
-    <VStack spacing="5px">
+    <VStack spacing="5px" fontFamily="Space Mono">
       <FormControl id="first-name" isRequired margin="8px">
         <FormLabel>Name</FormLabel>
         <Input
@@ -184,7 +184,7 @@ const Signup = () => {
         />
       </FormControl>
       <Button
-        colorScheme="blue"
+        colorScheme="gray"
         width="100%"
         style={{ marginTop: 15 }}
         onClick={submitHandler}

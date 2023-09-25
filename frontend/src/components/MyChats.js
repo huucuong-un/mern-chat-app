@@ -47,16 +47,16 @@ const MyChats = ({ fetchAgain }) => {
       flexDirection="column"
       alignItems="center"
       padding={3}
-      bg="white"
       width={{ base: "100%", md: "31%" }}
       borderRadius="lg"
-      borderWidth="1px"
+      backgroundColor="#444"
+      color="white"
     >
       <Box
         pb={3}
         px={3}
         fontSize={{ base: "28px", md: "30px" }}
-        fontFamily="Work sans"
+        fontFamily="Space Mono"
         display="flex"
         w="100%"
         justifyContent="space-between"
@@ -82,6 +82,7 @@ const MyChats = ({ fetchAgain }) => {
         h="100%"
         borderRadius="lg"
         overflowY="hidden"
+        backgroundColor="#444"
       >
         {" "}
         {chats ? (
@@ -90,7 +91,7 @@ const MyChats = ({ fetchAgain }) => {
               <Box
                 onClick={() => setSelectedChat(chat)}
                 cursor="pointer"
-                bg={selectedChat === chat ? "#38B2AC" : "#E8E8E8"}
+                bg={selectedChat === chat ? "#777" : "#E8E8E8"}
                 color={selectedChat === chat ? "white" : "black"}
                 px={3}
                 py={2}

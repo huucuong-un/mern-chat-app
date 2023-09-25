@@ -130,21 +130,27 @@ const SideDrawer = () => {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        bg="white"
+        bg="#333"
         w="100%"
         p="5px 10px 5px 10px"
         borderWidth="5px"
+        borderColor="#555"
       >
         <Tooltip label="Search users to chat" hasArrow placement="bottom-end">
           <Button variant="ghost" onClick={onOpen}>
             <i class="fa-solid fa-magnifying-glass"></i>
-            <Text d={{ base: "none", md: "flex" }} px={4}>
+            <Text d={{ base: "none", md: "flex" }} px={4} color="gray">
               Search users..
             </Text>
           </Button>
         </Tooltip>
 
-        <Text fontSize="2xl" fontFamily="Work sans" fontWeight="bold">
+        <Text
+          fontSize="2xl"
+          fontFamily="Space Mono"
+          fontWeight="bold"
+          color="white"
+        >
           Cookie Chat
         </Text>
         <div>
