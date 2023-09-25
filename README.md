@@ -15,6 +15,8 @@
 ![image](https://github.com/huucuong-un/mern-chat-app/assets/80157349/f0d092ea-7924-4049-838f-d4aa97cea2fc)
 ![image](https://github.com/huucuong-un/mern-chat-app/assets/80157349/f27e268c-7d98-4eea-ae1b-1bfb3ab564e0)
 
+ ### Connect me via: lehuucuong270603@gmail.com
+
 
 
 
